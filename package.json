@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "gh-pages -d out"
+    "build": "next build && next export",
+    "deploy": "npm run build && gh-pages -d out"
   },
   "dependencies": {
     "@testing-library/react": "^16.3.0",

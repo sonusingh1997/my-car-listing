@@ -3,7 +3,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   images: {
-    unoptimized: true, // Disable image optimization (required for static export)
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -11,8 +11,9 @@ const nextConfig = {
       },
     ],
   },
-  output: 'export', // Enable static export
-  assetPrefix: isProd ? '/my-car-listing/' : '', // Replace with your repo name
+  output: 'export',
+  assetPrefix: isProd ? '/my-car-listing' : '',
+  basePath: isProd ? '/my-car-listing' : '',
 };
 
 module.exports = nextConfig;
