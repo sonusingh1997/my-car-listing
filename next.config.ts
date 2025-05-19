@@ -11,7 +11,7 @@ const nextConfig = {
       },
     ],
   },
-  output: 'export',
+  // output: 'export',
   assetPrefix: isProd ? '/my-car-listing' : '',
   basePath: isProd ? '/my-car-listing' : '',
 };

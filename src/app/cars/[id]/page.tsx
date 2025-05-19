@@ -83,7 +83,7 @@ export default async function CarDetails({ params }: PageProps) {
             <div className="border p-3 rounded shadow-sm hover:shadow-md transition-shadow">
               <p className="font-semibold text-blue-600">Mileage</p>
               <p className="text-gray-600">
-                {car.mileage ? `${car.mileage.toLocaleString()} miles` : "N/A"}
+              {car.mileage ? `${car.mileage.toLocaleString()} miles` : "N/A"}
               </p>
             </div>
             <div className="border p-3 rounded shadow-sm hover:shadow-md transition-shadow">
